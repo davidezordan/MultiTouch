@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d445608c-250c-43e6-a6b4-c08f983b600b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MultiTouch.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Gestures\DoubleTapBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMultiTouchBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ManipulationLib\MatrixHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ManipulationLib\TouchHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ManipulationLib\Vector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MultiTouchBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MultiTouchBehavior.Silverlight.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MultiTouchManipulationBehavior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)ManipulationLib\Lib\System.Windows.Input.Manipulations.dll" />
+    <Content Include="$(MSBuildThisFileDirectory)ManipulationLib\README.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)README.txt" />
+  </ItemGroup>
+</Project>

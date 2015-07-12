@@ -1,16 +1,17 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MultiTouch.ManipulationLib.Silverlight")]
-[assembly: AssemblyDescription("Surface manipulation and inertia")]
+[assembly: AssemblyTitle("MultiTouch.Behaviors.WP8.Sample")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("MultiTouch.ManipulationLib.Silverlight")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2010-2014")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("MultiTouch.Behaviors.WP8.Sample")]
+[assembly: AssemblyCopyright("Copyright ©  2012 / 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4e04d28c-5f91-462a-9b34-06b0304f5b70")]
+[assembly: Guid("118a9d3b-7849-49b6-a4d5-1a7215898391")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -31,5 +32,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("0.7.0")]
-[assembly: AssemblyFileVersion("0.7.0")]
+[assembly: AssemblyVersion("0.6.8")]
+[assembly: AssemblyFileVersion("0.6.8")]
+[assembly: NeutralResourcesLanguageAttribute("en-US")]

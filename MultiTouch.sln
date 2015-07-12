@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{5489D80F-3265-4FDD-8C1E-DF738D961785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTouch.ManipulationLib.Silverlight", "MultiTouch.ManipulationLib.Silverlight\MultiTouch.ManipulationLib.Silverlight.csproj", "{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTouch.Behaviors.Silverlight", "MultiTouch.Behaviors.Silverlight\MultiTouch.Behaviors.Silverlight.csproj", "{EC9961B9-39B4-454F-966F-5C3E8C2B75C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Silverlight", "Silverlight", "{5B3F925E-9696-4B34-B48D-F8A95A1A57A3}"
@@ -14,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Silverlight", "Silverlight"
 		Samples\MultiTouch.Behaviors.W8.Sample\MultiTouch.Behaviors.W8.Sample_TemporaryKey.pfx = Samples\MultiTouch.Behaviors.W8.Sample\MultiTouch.Behaviors.W8.Sample_TemporaryKey.pfx
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W8", "W8", "{B1C1E2CC-5779-4ED4-AC19-0DEF2A13C254}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows 8", "Windows 8", "{B1C1E2CC-5779-4ED4-AC19-0DEF2A13C254}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multitouch.W8.Core", "Multitouch.W8.Core\Multitouch.W8.Core.csproj", "{6680089B-C409-4483-9415-D0B6CD381460}"
 EndProject
@@ -24,7 +22,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTouch.Behaviors.Silver
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTouch.Behaviors.UWP.Sample", "Samples\MultiTouch.Behaviors.UWP.Sample\MultiTouch.Behaviors.UWP.Sample.csproj", "{9D721F12-8B35-44D1-9D88-08C743C7424A}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MultiTouch.Shared", "MultiTouch.Shared\MultiTouch.Shared.shproj", "{D445608C-250C-43E6-A6B4-C08F983B600B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTouch.Behaviors.WP8.Sample", "Samples\MultiTouch.Behaviors.WP8.Sample\MultiTouch.Behaviors.WP8.Sample.csproj", "{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MultiTouch.Shared\MultiTouch.Shared.projitems*{4f72814f-a7a2-42a4-a3f7-1bd73ff4b41e}*SharedItemsImports = 4
+		MultiTouch.Shared\MultiTouch.Shared.projitems*{d445608c-250c-43e6-a6b4-c08f983b600b}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -36,16 +42,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Release|ARM.ActiveCfg = Release|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Release|x64.ActiveCfg = Release|Any CPU
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18}.Release|x86.ActiveCfg = Release|Any CPU
 		{EC9961B9-39B4-454F-966F-5C3E8C2B75C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC9961B9-39B4-454F-966F-5C3E8C2B75C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC9961B9-39B4-454F-966F-5C3E8C2B75C0}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -118,16 +114,40 @@ Global
 		{9D721F12-8B35-44D1-9D88-08C743C7424A}.Release|x86.ActiveCfg = Release|x86
 		{9D721F12-8B35-44D1-9D88-08C743C7424A}.Release|x86.Build.0 = Release|x86
 		{9D721F12-8B35-44D1-9D88-08C743C7424A}.Release|x86.Deploy.0 = Release|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|ARM.Build.0 = Debug|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x64.Build.0 = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x86.ActiveCfg = Debug|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x86.Build.0 = Debug|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Debug|x86.Deploy.0 = Debug|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|ARM.ActiveCfg = Release|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|ARM.Build.0 = Release|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|ARM.Deploy.0 = Release|ARM
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x64.ActiveCfg = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x64.Build.0 = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x64.Deploy.0 = Release|Any CPU
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x86.ActiveCfg = Release|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x86.Build.0 = Release|x86
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AA3A860C-D205-4F6A-9E6B-44713AE1DA18} = {5B3F925E-9696-4B34-B48D-F8A95A1A57A3}
 		{EC9961B9-39B4-454F-966F-5C3E8C2B75C0} = {5B3F925E-9696-4B34-B48D-F8A95A1A57A3}
 		{6680089B-C409-4483-9415-D0B6CD381460} = {B1C1E2CC-5779-4ED4-AC19-0DEF2A13C254}
 		{C6118164-D8E3-483A-8599-906DB150CDF2} = {B1C1E2CC-5779-4ED4-AC19-0DEF2A13C254}
 		{64D94805-0316-4638-9C49-FAE6625B3E35} = {5489D80F-3265-4FDD-8C1E-DF738D961785}
 		{9D721F12-8B35-44D1-9D88-08C743C7424A} = {5489D80F-3265-4FDD-8C1E-DF738D961785}
+		{4F72814F-A7A2-42A4-A3F7-1BD73FF4B41E} = {5489D80F-3265-4FDD-8C1E-DF738D961785}
 	EndGlobalSection
 EndGlobal

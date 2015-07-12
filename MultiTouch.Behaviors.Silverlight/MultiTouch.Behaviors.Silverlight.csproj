@@ -59,27 +59,46 @@
     <Reference Include="system" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Input.Manipulations">
-      <HintPath>..\MultiTouch.ManipulationLib.Silverlight\Lib\System.Windows.Input.Manipulations.dll</HintPath>
+    <Reference Include="System.Windows.Input.Manipulations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MultiTouch.Shared\ManipulationLib\Lib\System.Windows.Input.Manipulations.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Interactivity, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gestures\DoubleTapBehavior.cs" />
-    <Compile Include="Interfaces\IMultiTouchBehavior.cs" />
-    <Compile Include="MultiTouchBehavior.cs" />
-    <Compile Include="MultiTouchBehavior.Silverlight.cs" />
-    <Compile Include="MultiTouchManipulationBehavior.cs" />
+    <Compile Include="..\MultiTouch.Shared\Gestures\DoubleTapBehavior.cs">
+      <Link>Gestures\DoubleTapBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\Interfaces\IMultiTouchBehavior.cs">
+      <Link>Interfaces\IMultiTouchBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\ManipulationLib\MatrixHelper.cs">
+      <Link>ManipulationLib\MatrixHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\ManipulationLib\TouchHelper.cs">
+      <Link>ManipulationLib\TouchHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\ManipulationLib\Vector.cs">
+      <Link>ManipulationLib\Vector.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\MultiTouchBehavior.cs">
+      <Link>MultiTouchBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\MultiTouchBehavior.Silverlight.cs">
+      <Link>MultiTouchBehavior.Silverlight.cs</Link>
+    </Compile>
+    <Compile Include="..\MultiTouch.Shared\MultiTouchManipulationBehavior.cs">
+      <Link>MultiTouchManipulationBehavior.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MultiTouch.ManipulationLib.Silverlight\MultiTouch.ManipulationLib.Silverlight.csproj">
-      <Project>{aa3a860c-d205-4f6a-9e6b-44713ae1da18}</Project>
-      <Name>MultiTouch.ManipulationLib.Silverlight</Name>
-    </ProjectReference>
+    <Content Include="..\MultiTouch.Shared\ManipulationLib\README.txt">
+      <Link>ManipulationLib\README.txt</Link>
+    </Content>
+    <Content Include="..\MultiTouch.Shared\README.txt">
+      <Link>README.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

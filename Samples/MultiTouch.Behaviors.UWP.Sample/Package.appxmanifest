@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="289c0036-aaad-4d4e-8d0b-9cb7bf7de428"
+    Name="7578ae5e-1d63-4836-8fed-c2403cbc588d"
     Publisher="CN=info"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="289c0036-aaad-4d4e-8d0b-9cb7bf7de428" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="7578ae5e-1d63-4836-8fed-c2403cbc588d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MultiTouch.Behaviors.UWP.Sample</DisplayName>

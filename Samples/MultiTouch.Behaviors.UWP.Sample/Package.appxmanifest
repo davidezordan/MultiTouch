@@ -7,20 +7,20 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="c2109ca4-95db-4f90-a29c-cf1f6a5a2ffa"
-    Publisher="CN=Davide"
+    Name="289c0036-aaad-4d4e-8d0b-9cb7bf7de428"
+    Publisher="CN=info"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="c2109ca4-95db-4f90-a29c-cf1f6a5a2ffa" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="289c0036-aaad-4d4e-8d0b-9cb7bf7de428" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MultiTouch.Behaviors.UWP.Sample</DisplayName>
-    <PublisherDisplayName>Davide</PublisherDisplayName>
+    <PublisherDisplayName>info</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
 
   <Resources>
@@ -33,10 +33,11 @@
       EntryPoint="MultiTouch.Behaviors.UWP.Sample.App">
       <uap:VisualElements
         DisplayName="MultiTouch.Behaviors.UWP.Sample"
-        Square150x150Logo="Assets\Logo.png"
-        Square44x44Logo="Assets\SmallLogo.png"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
         Description="MultiTouch.Behaviors.UWP.Sample"
-        BackgroundColor="#464646">
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

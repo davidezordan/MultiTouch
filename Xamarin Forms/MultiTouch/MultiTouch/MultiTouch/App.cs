@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MultiTouch.Samples;
+using Xamarin.Forms;
 
 namespace MultiTouch
 {
@@ -7,19 +8,7 @@ namespace MultiTouch
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            MainPage = new SamplePage();
         }
 
         protected override void OnStart()

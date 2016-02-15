@@ -98,6 +98,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MultiTouch.Behaviors\MultiTouch.Behaviors.csproj">
+      <Project>{5413d4f7-beb4-4818-a474-59240e70070d}</Project>
+      <Name>MultiTouch.Behaviors</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MultiTouch\MultiTouch.csproj">
       <Name>MultiTouch</Name>
     </ProjectReference>

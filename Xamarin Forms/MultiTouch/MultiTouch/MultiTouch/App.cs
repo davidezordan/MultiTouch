@@ -1,4 +1,4 @@
-﻿using MultiTouch.Samples;
+﻿using MultiTouch.Views;
 using Xamarin.Forms;
 
 namespace MultiTouch

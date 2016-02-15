@@ -1,8 +1,8 @@
 ﻿using System;
-using MultiTouch.Extensions;
+using MultiTouch.Behaviors.Extensions;
 using Xamarin.Forms;
 
-namespace MultiTouch
+namespace MultiTouch.Behaviors
 {
     //Uses code from original Xamarin Forms samples:
     //https://github.com/xamarin/xamarin-forms-samples/tree/master/WorkingWithGestures/PinchGesture
@@ -32,8 +32,6 @@ namespace MultiTouch
 
         protected override void OnAttachedTo(View associatedObject)
         {
-            if (associatedObject == null) return;
-
             _pinchGestureRecognizer = new PinchGestureRecognizer();
             _associatedObject = associatedObject;
             _initializeEvents();
@@ -50,8 +48,6 @@ namespace MultiTouch
 
         protected override void OnDetachingFrom(View associatedObject)
         {
-            if (associatedObject == null) return;
-
             _cleanupEvents();
             _parent = null;
             _pinchGestureRecognizer = null;
@@ -60,7 +56,7 @@ namespace MultiTouch
             base.OnDetachingFrom(associatedObject);
         }
 
-        void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
+        private void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
         {
             if (_parent == null)
             {

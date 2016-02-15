@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace MultiTouch.Samples
+namespace MultiTouch.Views
 {
     public partial class SamplePage : ContentPage
     {

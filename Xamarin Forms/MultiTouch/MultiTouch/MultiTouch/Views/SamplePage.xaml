@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:multiTouch="clr-namespace:MultiTouch;assembly=MultiTouch"
-             x:Class="MultiTouch.Samples.SamplePage">
+             xmlns:behaviors="clr-namespace:MultiTouch.Behaviors;assembly=MultiTouch.Behaviors"
+             x:Class="MultiTouch.Views.SamplePage">
   <ContentPage.Content>
     <Grid Padding="20">
       <ContentView>
           <ContentView.Content>
             <Image Source="desert.jpg" BindingContext="{Binding}">
               <Image.Behaviors>
-                <multiTouch:MultiTouchBehavior />
+                <behaviors:MultiTouchBehavior />
               </Image.Behaviors>
             </Image>
           </ContentView.Content>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MultiTouch.Extensions
+namespace MultiTouch.Behaviors.Extensions
 {
     public static class DoubleExtensions
     {

@@ -169,41 +169,44 @@ namespace MultiTouch.Behaviors
                 return;
             }
 
-            if (e.Status == GestureStatus.Started)
+            switch (e.Status)
             {
-                _startScale = _parent.Content.Scale;
-                _parent.Content.AnchorX = 0;
-                _parent.Content.AnchorY = 0;
-            }
+                case GestureStatus.Started:
+                    _startScale = _parent.Content.Scale;
+                    _parent.Content.AnchorX = 0;
+                    _parent.Content.AnchorY = 0;
 
-            if (e.Status == GestureStatus.Running)
-            {
-                _currentScale += (e.Scale - 1) * _startScale;
-                _currentScale = Math.Max(1, _currentScale);
+                    break;
 
-                var renderedX = _parent.Content.X + _xOffset;
-                var deltaX = renderedX / _parent.Width;
-                var deltaWidth = _parent.Width / (_parent.Content.Width * _startScale);
-                var originX = (e.ScaleOrigin.X - deltaX) * deltaWidth;
+                case GestureStatus.Running:
+                    _currentScale += (e.Scale - 1) * _startScale;
+                    _currentScale = Math.Max(1, _currentScale);
 
-                var renderedY = _parent.Content.Y + _yOffset;
-                var deltaY = renderedY / _parent.Height;
-                var deltaHeight = _parent.Height / (_parent.Content.Height * _startScale);
-                var originY = (e.ScaleOrigin.Y - deltaY) * deltaHeight;
+                    var renderedX = _parent.Content.X + _xOffset;
+                    var deltaX = renderedX / _parent.Width;
+                    var deltaWidth = _parent.Width / (_parent.Content.Width * _startScale);
+                    var originX = (e.ScaleOrigin.X - deltaX) * deltaWidth;
 
-                var targetX = _xOffset - (originX * _parent.Content.Width) * (_currentScale - _startScale);
-                var targetY = _yOffset - (originY * _parent.Content.Height) * (_currentScale - _startScale);
+                    var renderedY = _parent.Content.Y + _yOffset;
+                    var deltaY = renderedY / _parent.Height;
+                    var deltaHeight = _parent.Height / (_parent.Content.Height * _startScale);
+                    var originY = (e.ScaleOrigin.Y - deltaY) * deltaHeight;
 
-                _parent.Content.TranslationX = targetX.Clamp(-_parent.Content.Width * (_currentScale - 1), 0);
-                _parent.Content.TranslationY = targetY.Clamp(-_parent.Content.Height * (_currentScale - 1), 0);
+                    var targetX = _xOffset - (originX * _parent.Content.Width) * (_currentScale - _startScale);
+                    var targetY = _yOffset - (originY * _parent.Content.Height) * (_currentScale - _startScale);
 
-                _parent.Content.Scale = _currentScale;
-            }
+                    _parent.Content.TranslationX = targetX.Clamp(-_parent.Content.Width * (_currentScale - 1), 0);
+                    _parent.Content.TranslationY = targetY.Clamp(-_parent.Content.Height * (_currentScale - 1), 0);
 
-            if (e.Status == GestureStatus.Completed)
-            {
-                _xOffset = _parent.Content.TranslationX;
-                _yOffset = _parent.Content.TranslationY;
+                    _parent.Content.Scale = _currentScale;
+
+                    break;
+
+                case GestureStatus.Completed:
+                    _xOffset = _parent.Content.TranslationX;
+                    _yOffset = _parent.Content.TranslationY;
+
+                    break;
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using MultiTouch.Behaviors.Helpers;
 using UIKit;
 
 namespace MultiTouch.iOS
@@ -21,7 +22,7 @@ namespace MultiTouch.iOS
             global::Xamarin.Forms.Forms.Init();
 
 			//Added to prevent iOS linker to strip behaviors assembly out of deployed package.
-			Behaviors.Infrastructure.Init();
+			Infrastructure.Init();
 
             LoadApplication(new App());
 

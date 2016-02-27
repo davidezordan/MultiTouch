@@ -9,7 +9,7 @@
           <ContentView.Content>
             <Image Source="desert.jpg" BindingContext="{Binding}">
               <Image.Behaviors>
-                <behaviors:MultiTouchBehavior />
+                <behaviors:MultiTouchBehavior IsScaleEnabled="True" IsTranslateEnabled="True" />
               </Image.Behaviors>
             </Image>
           </ContentView.Content>

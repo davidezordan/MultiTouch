@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:MultiTouch.Behaviors;assembly=MultiTouch.Behaviors"
-             x:Class="MultiTouch.Views.SamplePage">
+             x:Class="MultiTouch.Views.SamplePage" Style="{StaticResource PageStyle}">
   <ContentPage.Content>
-    <Grid Padding="20">
+    <Grid>
       <ContentView>
           <ContentView.Content>
             <Image Source="desert.jpg" BindingContext="{Binding}">

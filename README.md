@@ -4,7 +4,7 @@ XAML Behaviors implementing Multi-Touch Manipulation (Gestures) and Inertia.
 
 Xamarin Forms Behavior uses code from original Xamarin.Forms samples: https://github.com/xamarin/xamarin-forms-samples/tree/master/WorkingWithGestures
 
-Archived Projects targeting Silverlight, WPF and Windows Phone 7.x, 8.x available on CodePlex: http://multitouch.codeplex.com/.
+Archived projects targeting Silverlight, WPF and Windows Phone 7.x, 8.x available on CodePlex: http://multitouch.codeplex.com/.
 
 ## Xamarin.Forms: using the PanGestureRecognizer
 <p style="text-align: center;"><img class="size-medium wp-image-7904 aligncenter" src="https://davide.dev/wp-content/uploads/2016/02/Using-PanGestureRecognizer.png" alt="Using the PanGestureRecognizer" width="256" height="500"></p>

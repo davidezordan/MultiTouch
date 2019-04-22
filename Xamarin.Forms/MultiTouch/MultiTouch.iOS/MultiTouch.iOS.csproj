@@ -134,4 +134,7 @@
       <Name>MultiTouch</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\desert.jpg" />
+  </ItemGroup>
 </Project>

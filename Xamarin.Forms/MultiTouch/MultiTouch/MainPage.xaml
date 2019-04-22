@@ -6,7 +6,7 @@
 
     <Grid>
         <ContentView>
-            <Image Source="desert.jpg" BindingContext="{Binding}">
+            <Image x:Name="MyImage" Source="desert.jpg">
                 <Image.Behaviors>
                     <behaviors:MultiTouchBehavior IsScaleEnabled="True" IsTranslateEnabled="True" />
                 </Image.Behaviors>

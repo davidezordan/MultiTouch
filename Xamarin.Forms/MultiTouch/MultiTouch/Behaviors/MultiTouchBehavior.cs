@@ -210,6 +210,14 @@ namespace MultiTouch.Behaviors
             }
         }
 
+        /// <summary>
+        /// Initialize the behavior when OnAppearing is executed.
+        /// </summary>
+        public void OnAppearing()
+        {
+            AssociatedObjectBindingContextChanged(_associatedObject, null);
+        }
+
         #region IsScaleEnabled property
 
         /// <summary>

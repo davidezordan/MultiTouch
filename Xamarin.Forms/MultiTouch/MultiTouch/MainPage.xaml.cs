@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MultiTouch.Behaviors;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace MultiTouch
@@ -16,6 +12,13 @@ namespace MultiTouch
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            (MyImage.Behaviors[0] as MultiTouchBehavior).OnAppearing();
         }
     }
 }

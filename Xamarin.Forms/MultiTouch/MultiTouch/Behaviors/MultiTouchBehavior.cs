@@ -4,7 +4,7 @@
 // </copyright>
 // ****************************************************************************
 // <author>Davide Zordan</author>
-// <email>info@davidezordan.net</email>
+// <email>mail@davide.dev</email>
 // <date>27.02.2016</date>
 // <project>MultiTouch.Behaviors</project>
 // <web>http://multitouch.codeplex.com/</web>
